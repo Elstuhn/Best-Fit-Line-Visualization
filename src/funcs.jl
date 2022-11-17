@@ -25,6 +25,10 @@ end
 
 
 function visualize(x::Vector{Float64}, y::Vector{Float64}, m::Float64, c::Float64)
+  #=
+  x and y accepts Vector{Float64}, Vector{Float32}, Vector{Int64}, Vector{Int32}
+  x and y should be training data
+  =#
   n = length(x)
   if n != length(y)
     error("length of x and y has to be the same")
